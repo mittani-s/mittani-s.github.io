@@ -73,3 +73,9 @@
         })
         jQuery(window).scroll();
     })
+// お問い合わせフォームの遷移
+    function submitForm(){
+        document.myForm.submit();
+        document.getElementById('formWrapper').style.display = 'none';
+        document.getElementById('thxMessage').style.display = 'block';
+    }

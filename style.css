@@ -434,6 +434,11 @@ h5 {
       .sendbtn{
           text-align: right;
       }
+      #thxMessage{
+          text-align: center;
+          color: #7f7f7f;
+          
+      }
 footer{
     background: #333333;
     color: #ffffff;

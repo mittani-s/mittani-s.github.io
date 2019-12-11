@@ -237,30 +237,33 @@
                 <div class="container">
                     <h3 class="block_contact_title text-center mb-5 pb-3">CONTACT</h3>
                     <div class="container">
-                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd5-FjW99xYO8V6Dk99zPd52jciwHQVX0j7KeV-PqUpxLuHOw/formResponse">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="cp_iptxt">
-                                        <input type="text" name="entry.496159088" placeholder="お名前" required>
-                                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                        <div id="formWrapper">
+                            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd5-FjW99xYO8V6Dk99zPd52jciwHQVX0j7KeV-PqUpxLuHOw/formResponse"  method="post" name="myForm" target="dummyIframe">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cp_iptxt">
+                                            <input type="text" name="entry.496159088" placeholder="お名前" required>
+                                            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="cp_iptxt">
+                                            <input type="text" name="entry.430183573" placeholder="E-Mail" required>
+                                            <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                                        </div>
                                     </div>
-                                    <div class="cp_iptxt">
-                                        <input type="text" name="entry.430183573" placeholder="E-Mail" required>
-                                        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                                    <div class="col-md-6">
+                                        <div class="cp_iptxt_content">
+                                            <label for="msg" style="color:#7f7f7f;">お問い合わせ内容</label>
+                                            <textarea id="msg" type="text" name="entry.1001294735"  placeholder="お気軽にお問い合わせください"></textarea>
+                                        </div>
+                                        <div class="sendbtn">
+                                            <input class="btn-square-shadow" type="button" value="送信" onclick="submitForm()"/>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="cp_iptxt_content">
-                                        <label for="msg" style="color:#7f7f7f;">お問い合わせ内容</label>
-                                        <textarea id="msg" type="text" name="entry.1001294735"  placeholder="お気軽にお問い合わせください"></textarea>
-                                        </label>
-                                    </div>
-                                    <div class="sendbtn">
-                                        <button class="btn-square-shadow" type="submit" value="送信">送信</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                            <iframe name="dummyIframe" style="display:none;"></iframe>
+                        </div>
+                        <div id="thxMessage" style="display:none;"><p>お問い合わせありがとうございました。送信完了です。<br>2〜3日以内にご連絡させていただきます。</p></div>
                     </div>
                 </div>
             </div>
