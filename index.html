@@ -1,393 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MITTANI | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body data-spy="scroll" data-target="#Navbar">
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top navbar-dark">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-          aria-controls="Navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <h1>
-          <a class="navbar-brand ml-3" href="#" id="logo">MITTANI PORTFOLIO</a>
-        </h1>
-        <div
-          class="collapse navbar-collapse justify-content-end mr-5"
-          id="Navbar"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active jump" href="#HOME">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link jump" href="#ABOUT">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link jump" href="#SERVICES">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link jump" href="#PORTFOLIO">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link jump" href="#CONTACT">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <article>
-      <section>
-        <div class="block_home" id="HOME">
-          <h2>WEB ENGINEER</h2>
-          <h2 class="name text-center">
-            MITTANI
-          </h2>
-          <a href="#ABOUT" class="jump" id="home_scroll">
-            <div class="scroll_button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </a>
-        </div>
-        <div class="block_about" id="ABOUT">
-          <div class="container">
-            <h3 class="block_about_title text-center mb-5 pb-3">About</h3>
-            <div class="row mt-5">
-              <div class="col-md-6 effect-fade">
-                <figure class="face">
-                  <img src="./profile.jpg" alt="" decoding="”async”" />
-                </figure>
-              </div>
-              <div class="col-md-6 effect-fade">
-                <h4 class="about_text_title pb-2 text-center">
-                  Profile
-                </h4>
-                <p class="about_text">
-                  こんにちは、ご訪問いただき、ありがとうございます。
-                  WEBエンジニアとして活動しております、みったに(水谷新之介)と申します。<br />
-                  WordPressなどのCMSを導入したWEBサイトの制作や、コーディング、古くなったWebサイトの更新など、
-                  あらゆる業務に対応しております。<br />
-                  まずはお客様のご要望をお伺いし、それぞれのお客様にあったご提案をさせていただきます。
-                  WEB制作を通して、みなさまの魅力をお伝えするお手伝いができればと思っております。
-                </p>
-                <div class="skills_container">
-                  <h4 class="pb-2 text-center">
-                    Skills
-                  </h4>
-                  <div class="skills">
-                    <span class="Name">HTML</span>
-                    <div class="percent">
-                      <div class="progress" style="width: 80%;"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>MITTANI | Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body data-spy="scroll" data-target="#Navbar">
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1>
+                    <a class="navbar-brand ml-3" href="#" id="logo">MITTANI PORTFOLIO</a>
+                </h1>
+                <div class="collapse navbar-collapse justify-content-end mr-5" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active jump" href="#HOME">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jump" href="#ABOUT">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jump" href="#SERVICES">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jump" href="#PORTFOLIO">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link jump" href="#CONTACT">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <section>
+                <div class="block_home" id="HOME">
+                    <h2>WEB ENGINEER</h2>
+                    <h2 class="name text-center">MITTANI</h2>
+                    <a href="#ABOUT" class="jump" id="home_scroll">
+                        <div class="scroll_button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="block_about" id="ABOUT">
+                    <div class="container">
+                        <h3 class="block_about_title text-center mb-5 pb-3">About</h3>
+                        <div class="row mt-5">
+                            <div class="col-md-6 effect-fade">
+                                <figure class="face">
+                                    <img src="./profile.jpg" alt="" decoding="”async”" />
+                                </figure>
+                            </div>
+                            <div class="col-md-6 effect-fade">
+                                <h4 class="about_text_title pb-2 text-center">Profile</h4>
+                                <p class="about_text">
+                                    こんにちは、ご訪問いただき、ありがとうございます。 WEBエンジニアとして活動しております、みったに(水谷新之介)と申します。<br />
+                                    WordPressなどのCMSを導入したWEBサイトの制作や、コーディング、古くなったWebサイトの更新など、 あらゆる業務に対応しております。<br />
+                                    まずはお客様のご要望をお伺いし、それぞれのお客様にあったご提案をさせていただきます。 WEB制作を通して、みなさまの魅力をお伝えするお手伝いができればと思っております。
+                                </p>
+                                <div class="skills_container">
+                                    <h4 class="pb-2 text-center">Skills</h4>
+                                    <div class="skills">
+                                        <span class="Name">HTML</span>
+                                        <div class="percent">
+                                            <div class="progress" style="width: 80%"></div>
+                                        </div>
+                                        <span class="Value">80%</span>
+                                    </div>
+                                    <div class="skills">
+                                        <span class="Name">CSS</span>
+                                        <div class="percent">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                        <span class="Value">75%</span>
+                                    </div>
+                                    <div class="skills">
+                                        <span class="Name">JavaScript</span>
+                                        <div class="percent">
+                                            <div class="progress" style="width: 65%"></div>
+                                        </div>
+                                        <span class="Value">65%</span>
+                                    </div>
+                                    <div class="skills">
+                                        <span class="Name">WordPresss</span>
+                                        <div class="percent">
+                                            <div class="progress" style="width: 70%"></div>
+                                        </div>
+                                        <span class="Value">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <span class="Value">80%</span>
-                  </div>
-                  <div class="skills">
-                    <span class="Name">CSS</span>
-                    <div class="percent">
-                      <div class="progress" style="width: 75%;"></div>
+                </div>
+                <div class="block_services" id="SERVICES">
+                    <div class="container">
+                        <h3 class="block_services_title text-center">SERVICES</h3>
+                        <div class="row mt-5">
+                            <div class="col-md-4 text-center pr-3 pl-3 service_content effect-fade">
+                                <div class="services_icon pb-3 pt-5">
+                                    <i class="far fa-comments"></i>
+                                </div>
+                                <div class="services_title pt-3 pb-3">
+                                    <h4>DIRECTION</h4>
+                                </div>
+                                <p class="services_text text-left">作成するWebページについて、お客様からの要望をヒアリングし、適切な提案をいたします。 現状の問題点や、このようなWebページにしたいなど、まずはお気軽にお伝えください。 効果の高いWebページとなるように必要な情報を判断し、適切な対応をいたいます。</p>
+                            </div>
+                            <div class="col-md-4 text-center pr-3 pl-3 service_content effect-fade">
+                                <div class="services_icon pb-3 pt-5">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="services_title pt-3 pb-3">
+                                    <h4>CODING</h4>
+                                </div>
+                                <p class="services_text text-left">デザインデータをお預かりし、デザインの意図を理解した上で、適切にコーディングいたします。 そして、デザイン通りのコーディングだけでなく、SEO対策を意識したコーディングを実施しています。 近年はスマートフォン対応の重要性が増しているため、スマートフォン対応も必須で実施いたします。</p>
+                            </div>
+                            <div class="col-md-4 text-center pr-3 pl-3 service_content effect-fade">
+                                <div class="services_icon pb-3 pt-5">
+                                    <i class="fas fa-user-check"></i>
+                                </div>
+                                <div class="services_title pt-3 pb-3">
+                                    <h4>MAINTENANCE</h4>
+                                </div>
+                                <p class="services_text text-left">効果の高いWebページとするため、更新やメンテナンスは非常に大切です。 「サイトが古くなってきたので、更新したい」「写真やアイコンを入れ替えたい」などのご相談にも対応いたします。 まずはお気軽にご相談ください。</p>
+                            </div>
+                        </div>
                     </div>
-                    <span class="Value">75%</span>
-                  </div>
-                  <div class="skills">
-                    <span class="Name">JavaScript</span>
-                    <div class="percent">
-                      <div class="progress" style="width: 65%;"></div>
+                </div>
+                <div class="block_portfolio" id="PORTFOLIO">
+                    <div class="container">
+                        <h3 class="block_portfolio_title text-center mb-5 pb-3">PORTFOLIO</h3>
+                        <h4 class="text-center">模写サイト</h4>
+                        <div class="ptf_container">
+                            <div class="row">
+                                <div class="col-md-4 effect-fade">
+                                    <div class="card">
+                                        <div class="imgBx">
+                                            <img src="./portfolio1.png" alt="" class="img-fluid" decoding="”async”" />
+                                        </div>
+                                        <div class="contentBx">
+                                            <div class="content">
+                                                <h5>慶應義塾大学病院様サイト模写</h5>
+                                                <a class="js-modal-open" href="" data-target="modal01">表示</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 effect-fade">
+                                    <div class="card">
+                                        <div class="imgBx">
+                                            <img src="./portfolio2.png" alt="" class="img-fluid" decoding="”async”" />
+                                        </div>
+                                        <div class="contentBx">
+                                            <div class="content">
+                                                <h5>guntû様サイト模写</h5>
+                                                <a class="js-modal-open" href="" data-target="modal02">表示</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 effect-fade">
+                                    <div class="card">
+                                        <div class="imgBx">
+                                            <img src="./portfolio3.png" alt="" class="img-fluid" decoding="”async”" />
+                                        </div>
+                                        <div class="contentBx">
+                                            <div class="content">
+                                                <h5>Norton様サイト模写</h5>
+                                                <a class="js-modal-open" href="" data-target="modal03">表示</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- クリックで表示される部分 -->
+                                <div id="modal01" class="modal js-modal">
+                                    <div class="modal__bg js-modal-close"></div>
+                                    <div class="modal__content">
+                                        <img src="./portfolio1.png" alt="" class="img-fluid" decoding="”async”" />
+                                        <a class="js-modal-close" href="">閉じる</a>
+                                    </div>
+                                </div>
+                                <div id="modal02" class="modal js-modal">
+                                    <div class="modal__bg js-modal-close"></div>
+                                    <div class="modal__content">
+                                        <img src="./portfolio2.png" alt="" class="img-fluid" decoding="”async”" />
+                                        <a class="js-modal-close" href="">閉じる</a>
+                                    </div>
+                                </div>
+                                <div id="modal03" class="modal js-modal">
+                                    <div class="modal__bg js-modal-close"></div>
+                                    <div class="modal__content">
+                                        <img src="./portfolio3.png" alt="" class="img-fluid" decoding="”async”" />
+                                        <a class="js-modal-close" href="">閉じる</a>
+                                    </div>
+                                </div>
+                                <!-- クリックで表示される部分ここまで -->
+                            </div>
+                            <div class="row">
+                                <!-- 実績増えたらここに追加 -->
+                            </div>
+                        </div>
                     </div>
-                    <span class="Value">65%</span>
-                  </div>
-                  <div class="skills">
-                    <span class="Name">WordPresss</span>
-                    <div class="percent">
-                      <div class="progress" style="width: 70%;"></div>
+                </div>
+                <div class="block_contact effect-fade" id="CONTACT">
+                    <div class="container">
+                        <h3 class="block_contact_title text-center mb-5 pb-3">CONTACT</h3>
+                        <div class="container">
+                            <div id="formWrapper">
+                                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd5-FjW99xYO8V6Dk99zPd52jciwHQVX0j7KeV-PqUpxLuHOw/formResponse" method="post" name="myForm" target="dummyIframe">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="cp_iptxt">
+                                                <input type="text" name="entry.496159088" placeholder="お名前" required />
+                                                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="cp_iptxt">
+                                                <input type="text" name="entry.430183573" placeholder="E-Mail" required />
+                                                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="cp_iptxt_content">
+                                                <label for="msg" style="color: #7f7f7f">お問い合わせ内容</label>
+                                                <textarea id="msg" type="text" name="entry.1001294735" placeholder="お気軽にお問い合わせください"></textarea>
+                                            </div>
+                                            <div class="sendbtn">
+                                                <input class="btn-square-shadow" type="button" value="送信" onclick="submitForm()" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <iframe name="dummyIframe" style="display: none"></iframe>
+                            </div>
+                            <div id="thxMessage" style="display: none">
+                                <p>お問い合わせありがとうございました。送信完了です。<br />2〜3日以内にご連絡させていただきます。</p>
+                            </div>
+                        </div>
                     </div>
-                    <span class="Value">70%</span>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block_services" id="SERVICES">
-          <div class="container">
-            <h3 class="block_services_title text-center">SERVICES</h3>
-            <div class="row mt-5">
-              <div
-                class="col-md-4 text-center pr-3 pl-3 service_content effect-fade"
-              >
-                <div class="services_icon pb-3 pt-5">
-                  <i class="far fa-comments"></i>
-                </div>
-                <div class="services_title pt-3 pb-3">
-                  <h4>DIRECTION</h4>
-                </div>
-                <p class="services_text text-left">
-                  作成するWebページについて、お客様からの要望をヒアリングし、適切な提案をいたします。
-                  現状の問題点や、このようなWebページにしたいなど、まずはお気軽にお伝えください。
-                  効果の高いWebページとなるように必要な情報を判断し、適切な対応をいたいます。
-                </p>
-              </div>
-              <div
-                class="col-md-4 text-center pr-3 pl-3 service_content effect-fade"
-              >
-                <div class="services_icon pb-3 pt-5">
-                  <i class="fas fa-code"></i>
-                </div>
-                <div class="services_title pt-3 pb-3">
-                  <h4>CODING</h4>
-                </div>
-                <p class="services_text text-left">
-                  デザインデータをお預かりし、デザインの意図を理解した上で、適切にコーディングいたします。
-                  そして、デザイン通りのコーディングだけでなく、SEO対策を意識したコーディングを実施しています。
-                  近年はスマートフォン対応の重要性が増しているため、スマートフォン対応も必須で実施いたします。
-                </p>
-              </div>
-              <div
-                class="col-md-4 text-center pr-3 pl-3 service_content effect-fade"
-              >
-                <div class="services_icon pb-3 pt-5">
-                  <i class="fas fa-user-check"></i>
-                </div>
-                <div class="services_title pt-3 pb-3">
-                  <h4>MAINTENANCE</h4>
-                </div>
-                <p class="services_text text-left">
-                  効果の高いWebページとするため、更新やメンテナンスは非常に大切です。
-                  「サイトが古くなってきたので、更新したい」「写真やアイコンを入れ替えたい」などのご相談にも対応いたします。
-                  まずはお気軽にご相談ください。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block_portfolio" id="PORTFOLIO">
-          <div class="container">
-            <h3 class="block_portfolio_title text-center mb-5 pb-3">
-              PORTFOLIO
-            </h3>
-            <h4 class="text-center">模写サイト</h4>
-            <div class="ptf_container">
-              <div class="row">
-                <div class="col-md-4 effect-fade">
-                  <div class="card">
-                    <div class="imgBx">
-                      <img
-                        src="./portfolio1.png"
-                        alt=""
-                        class="img-fluid"
-                        decoding="”async”"
-                      />
-                    </div>
-                    <div class="contentBx">
-                      <div class="content">
-                        <h5>慶應義塾大学病院様サイト模写</h5>
-                        <a class="js-modal-open" href="" data-target="modal01"
-                          >表示</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 effect-fade">
-                  <div class="card">
-                    <div class="imgBx">
-                      <img
-                        src="./portfolio2.png"
-                        alt=""
-                        class="img-fluid"
-                        decoding="”async”"
-                      />
-                    </div>
-                    <div class="contentBx">
-                      <div class="content">
-                        <h5>guntû様サイト模写</h5>
-                        <a class="js-modal-open" href="" data-target="modal02"
-                          >表示</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 effect-fade">
-                  <div class="card">
-                    <div class="imgBx">
-                      <img
-                        src="./portfolio3.png"
-                        alt=""
-                        class="img-fluid"
-                        decoding="”async”"
-                      />
-                    </div>
-                    <div class="contentBx">
-                      <div class="content">
-                        <h5>Norton様サイト模写</h5>
-                        <a class="js-modal-open" href="" data-target="modal03"
-                          >表示</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- クリックで表示される部分 -->
-                <div id="modal01" class="modal js-modal">
-                  <div class="modal__bg js-modal-close"></div>
-                  <div class="modal__content">
-                    <img
-                      src="./portfolio1.png"
-                      alt=""
-                      class="img-fluid"
-                      decoding="”async”"
-                    />
-                    <a class="js-modal-close" href="">閉じる</a>
-                  </div>
-                </div>
-                <div id="modal02" class="modal js-modal">
-                  <div class="modal__bg js-modal-close"></div>
-                  <div class="modal__content">
-                    <img
-                      src="./portfolio2.png"
-                      alt=""
-                      class="img-fluid"
-                      decoding="”async”"
-                    />
-                    <a class="js-modal-close" href="">閉じる</a>
-                  </div>
-                </div>
-                <div id="modal03" class="modal js-modal">
-                  <div class="modal__bg js-modal-close"></div>
-                  <div class="modal__content">
-                    <img
-                      src="./portfolio3.png"
-                      alt=""
-                      class="img-fluid"
-                      decoding="”async”"
-                    />
-                    <a class="js-modal-close" href="">閉じる</a>
-                  </div>
-                </div>
-                <!-- クリックで表示される部分ここまで -->
-              </div>
-              <div class="row">
-                <!-- 実績増えたらここに追加 -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block_contact effect-fade" id="CONTACT">
-          <div class="container">
-            <h3 class="block_contact_title text-center mb-5 pb-3">CONTACT</h3>
-            <div class="container">
-              <div id="formWrapper">
-                <form
-                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd5-FjW99xYO8V6Dk99zPd52jciwHQVX0j7KeV-PqUpxLuHOw/formResponse"
-                  method="post"
-                  name="myForm"
-                  target="dummyIframe"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="cp_iptxt">
-                        <input
-                          type="text"
-                          name="entry.496159088"
-                          placeholder="お名前"
-                          required
-                        />
-                        <i
-                          class="fa fa-user fa-lg fa-fw"
-                          aria-hidden="true"
-                        ></i>
-                      </div>
-                      <div class="cp_iptxt">
-                        <input
-                          type="text"
-                          name="entry.430183573"
-                          placeholder="E-Mail"
-                          required
-                        />
-                        <i
-                          class="fa fa-envelope fa-lg fa-fw"
-                          aria-hidden="true"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="cp_iptxt_content">
-                        <label for="msg" style="color: #7f7f7f;"
-                          >お問い合わせ内容</label
-                        >
-                        <textarea
-                          id="msg"
-                          type="text"
-                          name="entry.1001294735"
-                          placeholder="お気軽にお問い合わせください"
-                        ></textarea>
-                      </div>
-                      <div class="sendbtn">
-                        <input
-                          class="btn-square-shadow"
-                          type="button"
-                          value="送信"
-                          onclick="submitForm()"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </form>
-                <iframe name="dummyIframe" style="display: none;"></iframe>
-              </div>
-              <div id="thxMessage" style="display: none;">
-                <p>
-                  お問い合わせありがとうございました。送信完了です。<br />2〜3日以内にご連絡させていただきます。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-    <footer>
-      <p class="copyright_text">
-        &copy Copyright - Shinnosuke Mizutani, 2020 All Rights Reserved.
-      </p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script async src="style.js"></script>
-  </body>
+            </section>
+        </article>
+        <footer>
+            <p class="copyright_text">&copy Copyright - Shinnosuke Mizutani, 2020 All Rights Reserved.</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script async src="style.js"></script>
+    </body>
 </html>
